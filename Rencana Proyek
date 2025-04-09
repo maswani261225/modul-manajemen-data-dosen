@@ -1,0 +1,35 @@
+## Rencana Proyek Pengembangan Sistem Informasi Akademik 
+# Judul
+ Sistem Informasi Modul Manajemen Data Dosen
+
+1. Latar Belakang
+Sistem informasi akademik diperlukan untuk mendukung efisiensi pengelolaan data dosen,sistem manual dalam 
+pendataan dosen menyebabkan keterlambatan dan resiko kehilangan data.dibutuhkan sistem digital yang terinte
+grasi,agar informasi akademik lebih cepat akurat dan mudah di akses oleh admin serta pihak terkait 
+
+2. Tujuan
+- Mengelola data dosen secara otomatis berdasarkan (Nama,NIDN,Biodata,Status,Keaktifan dll)
+- Mempermudah proses penjadwalan dan distribusi tugas dosen 
+- Menyediakan laporan aktivitas dosen dalam bentuk digital
+- Meningkatkan efisiensi dan akurasi data akademik
+
+3. Ruang Lingkup
+- Modul biodata dosen
+- Modul penjadwalan
+- CRUD data dosen 
+- Login admin
+- Database dosen 
+- Hak akses admin untuk kelola data dosen
+- Menyediakan sistem input,edit dan hapus data dosen
+
+4. Tim Pengembang
+- Maswani
+- Intan Nuraini
+
+5. Timeline
+| Tahap        | Tanggal Mulai | Tanggal Selesai |
+|--------------|----------------|----------------|
+| Perencanaan  | 9 April        | 10 April       |
+| Analisis     | 11 April       | 12 April       |
+| Desain       | ...            | ....           |
+|Implementasi  | ...            |....            |
