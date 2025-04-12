@@ -1,0 +1,116 @@
+## Dokumen Desain Perangkat Lunak (Software Design Document - SDD)
+
+# 1. Pendahuluan
+  
+1.1 Tujuan
+Dokumen ini bertujuan untuk memberikan deskripsi terperinci mengenai desain arsitektural dan desain modul sistem manajemen data dosen. Sistem ini akan digunakan oleh institusi pendidikan untuk mengelola informasi dosen secara efisien, termasuk data pribadi, riwayat pendidikan, riwayat jabatan, dan penelitian.
+
+1.2 Ruang Lingkup
+Sistem informasi ini dirancang untuk mengelola data dosen dengan fitur utama seperti:
+- Manajemen data identitas dosen
+- Riwayat pendidikan dosen
+- Riwayat jabatan akademik
+- Riwayat penelitian dan publikasi
+- Integrasi API untuk akses data secara eksternal
+- Sistem CRUD berbasis web dengan otentikasi dan otorisasi pengguna
+
+1.3 Referensi
+- IEEE 1016-2009 Standard for Software Design Descriptions
+- Panduan Teknis Sistem Informasi Akademik
+- Dokumen kebutuhan pengguna (SRS)
+- Dokumentasi API eksternal institusi
+
+# 2. Desain Arsitektur
+
+2.1 Diagram Arsitektur Sistem
+Diagram berikut menggambarkan arsitektur sistem berbasis MVC (Model-View-Controller) yang digunakan pada sistem manajemen data dosen.
+
+![Diagram Arsitektur Sistem](./A_flowchart_diagram_titled_"Desain_Arsitektur_Sist.png)
+
+2.2 Komponen Utama Sistem
+- Frontend   : HTML, CSS, JavaScript
+- Backend    : PHP dengan framework Laravel
+- Database   : MySQL
+- API Layer  : RESTful API dengan otentikasi API key
+
+# 3. Desain Modul dan Komponen
+
+3.1 Modul Autentikasi Pengguna
+- Login, logout, registrasi, dan pemulihan kata sandi
+- Otentikasi berbasis token JWT
+
+3.2 Modul Manajemen Data Dosen
+- CRUD untuk data dosen
+- Riwayat pendidikan, jabatan, penelitian
+- Validasi dan filtering data
+
+3.3 Modul Laporan dan Analitik
+- Visualisasi data dosen
+- Laporan jumlah dosen, penelitian, dan jabatan
+- Export ke PDF dan Excel
+
+3.4 Modul Integrasi API
+- Akses data dosen secara eksternal via RESTful API
+- Otentikasi API key
+
+# 4. Desain Basis Data
+
+4.1 Model Data
+Struktur data meliputi:
+- Tabel dosen
+- Tabel pendidikan
+- Tabel jabatan
+- Tabel penelitian
+
+4.2 Diagram Entity-Relationship (ERD)
+Berikut adalah diagram ERD sistem manajemen data dosen:
+
+![Diagram ERD](./A_diagram_depicted_in_the_image_labeled_"Diagram_E.png)
+
+4.3 Indexing dan Optimisasi
+- Penggunaan indexing untuk pencarian cepat
+- Optimisasi relasi antar tabel
+
+5. Antarmuka Pengguna
+
+5.1 Wireframe Desain
+- Halaman login, dashboard, dan form manajemen dosen
+
+5.2 Desain Responsif
+- Kompatibel di perangkat desktop dan mobile
+
+# 6. Pertimbangan Keamanan
+- Otentikasi JWT
+- Validasi input form
+- Penggunaan HTTPS
+- Firewall Aplikasi Web (WAF)
+
+# 7. Pengujian dan Validasi
+
+7.1 Pengujian Unit
+- PHPUnit
+- Pengujian CRUD dan validasi
+
+7.2 Pengujian Keamanan
+- SQL Injection dan XSS
+
+7.3 Uji Fungsionalitas
+- Semua fitur diuji sesuai skenario pengguna
+
+# 8. Lampiran
+
+8.1 Diagram API Dosen
+Diagram API menggambarkan alur komunikasi antara sistem internal dengan sistem eksternal:
+
+![Lampiran - Diagram API](./A_document_page_in_Indonesian_titled_"Lampiran"_fe.png)
+
+8.2 Struktur Endpoint
+- `GET /api/dosen`
+- `POST /api/dosen`
+- `PUT /api/dosen/{id}`
+- `DELETE /api/dosen/{id}`
+
+8.3 Referensi Pustaka
+- Modul Desain Sistem Informasi
+- Dokumentasi Laravel API Resource
+- Panduan Database Relasional
