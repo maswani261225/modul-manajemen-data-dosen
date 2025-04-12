@@ -1,4 +1,4 @@
-**Kelompok 5 (Modul Manajemen Data Dosen)****
+**KeLOMPOK  5 (MODUL MANAJEMEN DATA DOSEN)**
 1. Maswani
 2. Intan Nuraini
    
